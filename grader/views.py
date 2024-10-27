@@ -47,9 +47,9 @@ def question(request, question_id):
                 lstm_model = get_model()
                 lstm_model.load_weights(os.path.join(current_path, "deep_learning_files/final_lstm_5_08304.h5"))
                 preds = lstm_model.predict(testDataVecs)
-                print("Equal or not :", (question.question_title.strip() == content.strip()))
-                print("Content is :", content)
-                print("Question is :", question.question_title.replace("\n", " ").strip())
+                # print("Equal or not :", (question.question_title.strip() == content.strip()))
+                # print("Content is :", content)
+                # print("Question is :", question.question_title.replace("\n", " ").strip())
 
                 if math.isnan(preds):
                     preds = 0
@@ -61,7 +61,7 @@ def question(request, question_id):
                 if preds > question.max_score:
                     preds = question.max_score
             else:
-                preds = question.min_score
+                preds = 0
 
             K.clear_session()
             essay = Essay.objects.create(
