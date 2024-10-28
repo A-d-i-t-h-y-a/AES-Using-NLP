@@ -35,7 +35,7 @@ def question(request, question_id):
 
             content = form.cleaned_data.get('answer')
 
-            if len(content.split()) > 30:
+            if len(content.split()) > 50:
                 num_features = 300
                 model = word2vec.KeyedVectors.load_word2vec_format(os.path.join(current_path, "deep_learning_files/wordToVec.bin"), binary=True)
                 clean_test_essays = []
