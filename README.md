@@ -43,14 +43,10 @@ Follow the steps below to set up and run the project locally:
 
     ***
 
-6. Once the server has started, open your browser and visit the website.
+6. **Once the server has started, open your browser and visit the website.**
 
 7. **Select an essay topic.**
 
 8. **Write the essay.**
 
 9. **Click on the "Grade Me" button** to submit the essay for grading. The system will analyze the text and provide a score based on its content.
-
-```
-
-```
