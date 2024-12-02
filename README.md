@@ -15,6 +15,10 @@ Follow the steps below to set up and run the project locally:
 2. **Run the starter script:**
    Execute the `starterScript.bat` to set up the environment.
 
+    ```bash
+    ./starterScript.bat
+    ```
+
 3. ## **Activate the virtual environment:**
 
     ```bash
